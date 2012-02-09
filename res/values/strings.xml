@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Once Upon a Grapefruit</string>
+    <string name="explanation">Welcome to Once Upon a Grapefruit, a collaborative storytelling game! The premise of the game is quite simple: write a line to a story then pass it to a friend and repeat. The current writer can only see what the previous person wrote, and must write their part solely based off of that. Nonsensical hilarity ensues!</string>
+    <string name="play_button">Play</string>
+    <string name="play_again_button">Play Again</string>
+    <string name="share_button">Share</string>
+    <string name="end_story_button">End Story</string>
+    <color name="main_color">#F4F3EC</color>
+    <color name="text_color">#000</color>
+
+</resources>
