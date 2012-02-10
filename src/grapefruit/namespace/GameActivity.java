@@ -1,8 +1,10 @@
 package grapefruit.namespace;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.Button;
@@ -35,6 +37,25 @@ public class GameActivity extends Activity {
 		turnsTaken++;
 		turnText.setText((numTurns - turnsTaken) + " lines remaining");
 		currentLine.setText("");
+		
+		if (turnsTaken == numTurns) {
+			endGamePhase();
+		}
+	}
+	
+	public void endGamePhase() {
+		Button endTurn = (Button) findViewById(R.id.button1);
+		((LinearLayout) currentLine.getParent()).removeView(currentLine);
+		((LinearLayout) endTurn.getParent()).removeView(endTurn);
+		
+		Button endGame = (Button) findViewById(R.id.button2);
+		endGame.setVisibility(View.VISIBLE);
+	}
+	
+	public void endGame(View view) {
+		Intent i = new Intent(GameActivity.this, EndGameActivity.class);
+		i.putExtra("story", story);
+		startActivity(i);
 	}
 	
 }

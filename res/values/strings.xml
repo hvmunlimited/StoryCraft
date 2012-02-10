@@ -10,5 +10,6 @@
     <color name="text_color">#000</color>
     <string name="prev_line">Previous Line:</string>
     <string name="end_turn">End Turn</string>
+    <string name="new_game">New Game</string>
 
 </resources>
