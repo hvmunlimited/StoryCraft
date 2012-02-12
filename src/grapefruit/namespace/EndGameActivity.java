@@ -16,7 +16,8 @@ public class EndGameActivity extends Activity {
 		
 		String[] story = getIntent().getStringArrayExtra("story");
 		
-		for (int i = 0; i < story.length; i++) {
+		completeStory = story[0];
+		for (int i = 1; i < story.length; i++) {
 			completeStory = completeStory + "\n" + story[i];
 		}
 		
