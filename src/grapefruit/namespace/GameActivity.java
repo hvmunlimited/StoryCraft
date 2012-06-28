@@ -35,7 +35,12 @@ public class GameActivity extends Activity {
 		story[turnsTaken] = currentLine.getText().toString();
 		prevLine.setText(story[turnsTaken]);
 		turnsTaken++;
-		turnText.setText((numTurns - turnsTaken) + " lines remaining");
+		if (numTurns - turnsTaken == 1) {
+			turnText.setText("1 line remaining");
+		}
+		else {
+			turnText.setText((numTurns - turnsTaken) + " lines remaining");
+		}
 		currentLine.setText("");
 		
 		if (turnsTaken == numTurns) {

@@ -45,16 +45,12 @@ public class GrapefruitActivity extends Activity {
 
 			@Override
 			public void onFocusChange(View v, boolean hasFocus) {
-				if (hasFocus == false) {
+				if (!hasFocus) {
 					int value = Integer.parseInt(seekBarVal.getText().toString());
-					if ((value >= 5) || (value <= 20)) {
-						seekBar.setProgress(value);
-						numTurns = value;
-					}
-				}
-				
+					seekBar.setProgress(value);
+					numTurns = value;
+				}	
 			}
-        	
         });
         
     }
