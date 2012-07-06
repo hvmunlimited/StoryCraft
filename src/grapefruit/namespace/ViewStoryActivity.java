@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.view.View;
 
-public class EndGameActivity extends Activity {
+public class ViewStoryActivity extends Activity {
 	String completeStory;
 	private TextView storyView;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.end);
+		setContentView(R.layout.view);
 		
 		String[] story = getIntent().getStringArrayExtra("story");
 		
@@ -27,7 +27,7 @@ public class EndGameActivity extends Activity {
 	}
 	
 	public void restart(View view) {
-		startActivity(new Intent(EndGameActivity.this, GrapefruitActivity.class));
+		finish();
 	}
 
 }

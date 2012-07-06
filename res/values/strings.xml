@@ -2,14 +2,19 @@
 <resources>
     <string name="app_name">StoryCraft</string>
     <string name="explanation">Welcome to StoryCraft, a collaborative storytelling game! The premise of the game is quite simple: write a line to a story then pass it to a friend and repeat the process. The current writer can only see what the previous person wrote, and must write their part solely based off of that. Nonsensical hilarity ensues! To start, choose the number of turns to be played, then press play.</string>
-    <string name="play_button">Play</string>
+    <string name="play_button">New Game</string>
     <string name="play_again_button">Play Again</string>
     <string name="share_button">Share</string>
     <string name="end_story_button">End Story</string>
-    <color name="main_color">#F4F3EC</color>
+    <color name="main_color">#F4D9AD</color>
     <color name="text_color">#000</color>
     <string name="prev_line">Previous Line:</string>
     <string name="end_turn">End Turn</string>
     <string name="new_game">New Game</string>
+    <string name="instruct_button">Instructions</string>
+    <string name="start_val">10</string>
+    <string name="load_button">View Saved Games</string>
+    <string name="back_button">Back</string>
+    <string name="lines">Lines</string>
 
 </resources>

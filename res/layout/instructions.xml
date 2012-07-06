@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+     <TextView
+         android:layout_width="262dp"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="20dp"
+         android:background="@color/main_color"
+         android:lineSpacingMultiplier="1.2"
+         android:paddingBottom="40dp"
+         android:text="@string/explanation"
+         android:textColor="@color/text_color" >
+
+        <requestFocus />
+    </TextView>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:onClick="back"
+         android:text="@string/back_button" />
+
+</LinearLayout>

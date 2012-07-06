@@ -19,7 +19,7 @@ public class GrapefruitActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         seekBarVal = (EditText) findViewById(R.id.seekBarVal);
-        seekBar = (SeekBar) findViewById(R.id.seekBar1);
+        seekBar = (SeekBar) findViewById(R.id.seekBar);
         
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 			
@@ -58,6 +58,16 @@ public class GrapefruitActivity extends Activity {
     public void playGame(View view) {
     	Intent i = new Intent(GrapefruitActivity.this, GameActivity.class);
     	i.putExtra("numTurns", numTurns);
+    	startActivity(i);
+    }
+    
+    public void viewSaves(View view) {
+    	Intent i = new Intent(GrapefruitActivity.this, SavedGamesActivity.class);
+    	startActivity(i);
+    }
+    
+    public void loadInstructions(View view) {
+    	Intent i = new Intent(GrapefruitActivity.this, InstructionActivity.class);
     	startActivity(i);
     }
     

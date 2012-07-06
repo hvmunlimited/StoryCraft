@@ -58,9 +58,10 @@ public class GameActivity extends Activity {
 	}
 	
 	public void endGame(View view) {
-		Intent i = new Intent(GameActivity.this, EndGameActivity.class);
+		Intent i = new Intent(GameActivity.this, ViewStoryActivity.class);
 		i.putExtra("story", story);
 		startActivity(i);
+		finish();
 	}
 	
 }
